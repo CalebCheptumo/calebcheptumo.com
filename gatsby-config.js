@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Caleb Cheptumo`,
+    description: `Caleb Cheptumo Kibusia is a web developer from Nairobi, Kenya. He specializes in creating high-quality websites and applications.`,
+    author: `@calebcheptumo`,
+    siteUrl: `https://calebcheptumo.com/`,
   },
   plugins: [
     `gatsby-plugin-image`,
