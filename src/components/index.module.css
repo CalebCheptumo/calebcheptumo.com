@@ -5,10 +5,8 @@
   --w: 280px;
   --n: 2;
   gap: var(--size-gap);
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit,
+      minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr));
   margin-bottom: var(--size-gap);
   margin-top: var(--size-gap);
 }
@@ -51,4 +49,69 @@
 .intro {
   max-width: none;
   line-height: var(--line-height-loose);
+}
+
+
+.hero {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroText {
+  flex: 1;
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroText h1 {
+  font-size: 2.5em;
+}
+
+.heroText p {
+  font-size: 1.2em;
+}
+
+.heroText button {
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+@keyframes jiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+.heroText button:hover {
+  animation: jiggle 0.5s infinite;
+  background-color: #FF8C00;
+}
+
+
+.button {
+  font-family: var(--font-sans);
+  /* other styles */
 }
